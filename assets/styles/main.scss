@@ -2,15 +2,26 @@ $primary-color: #2f80ed;
 $secondary-color: #333333;
 
 html {
-    font-family: Roboto, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
-* {
-color: $secondary-color;
+img {
+    float: left;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: blue; /* Цвет линии */
+    height: 3px; /* Толщина линии */
+   }
+
+.cv {
+    max-width:  700px;
+    margin: 0 auto;
 }
 
 h1 {
-    color:$secondary-color;
+    color: blue;
     margin-bottom: 0.25em;
 }
 
@@ -21,8 +32,33 @@ h2 {
     margin-bottom: 1em;
 }
 
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 40px;
+    text-align:center;
+}
+
 a {
     color: $primary-color;
+}
+
+.adress__name {
+    font-weight: bold;
+}
+
+.busyness__type {
+    font-weight: bold;
+}
+
+.contact__type {
+    font-weight: bold;
+}
+
+.inf__type {
+    font-weight: bold;
 }
 
 .busyness {
@@ -33,7 +69,37 @@ a {
     margin-bottom: 2em;
 }
 
+.adress {
+    margin-bottom: 2em;
+}
+
+.skills__details
+{
+    font-size: 1.1em;
+}
+
+.rs 
+{
+    font-size: 40px;
+    text-align:right;
+    font-weight: bold;
+}
+
+.keys__details
+{
+    font-size: 1.1em;
+}
+
 .contact {
+    display: flex;
+
+
+    &__type {
+        min-width: 90px;
+    }
+}
+
+.inf {
     display: flex;
 
 
